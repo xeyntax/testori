@@ -15,7 +15,7 @@ const outlets = [
   'Sentosa Square',
   'Batang Kali'
 ];
-document.getElementById('outlet-list').innerHTML = outlets.map((name, i) => `<a class="outlet" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('Ayam Gepuk Ori Selayang '+name)}" target="_blank" rel="noopener"><small>${String(i+1).padStart(2,'0')}</small><span>${name}</span>${i===9?'<span class="hq">HQ</span>':''}<span class="arrow">⌲</span></a>`).join('');
+document.getElementById('outlet-list').innerHTML = outlets.map((name, i) => `<a class="outlet" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('Ayam Gepuk Ori Selayang '+name)}" target="_blank" rel="noopener"><small>${String(i+1).padStart(2,'0')}</small><span>${name}</span>${i===9?'<span class="hq">HQ</span>':''}<span class="arrow">•</span></a>`).join('');
 const sets = [
   ['A', 'The original favourite', 'Nasi + ayam gepuk + timun & kubis.'],
   ['B', 'A little extra comfort', 'Nasi + ayam gepuk + timun + kubis + tempe.'],
